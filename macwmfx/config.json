@@ -1,0 +1,134 @@
+{
+    "hotload": {
+        "enabled": true,
+        "interval": 1
+    },
+    "spaces": {
+        "enabled": true,
+        "instantFullscreen": true,
+        "behavior": "default",
+        "names": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+        ]
+    },
+    "window": {
+        "blur": {
+            "enabled": true,
+            "passes": 1,
+            "radius": 10
+        },
+        "titlebar": {
+            "enabled": false,
+            "forceClassic": false,
+            "customTitle": {
+                "enabled": true,
+                "title": "My Custom Window Title"
+            },
+            "customColor": {
+                "enabled": false,
+                "background": "32302f",
+                "foreground": "fbf1c7"
+            },
+            "style": "modern",
+            "size": 22
+        },
+        "trafficLights": {
+            "enabled": false,
+            "customColor": {
+                "enabled": true,
+                "active": {
+                    "stop": "fb4934",
+                    "yield": "fabd2f",
+                    "go": "b8bb26"
+                },
+                "inactive": {
+                    "stop": "d5c4a1",
+                    "yield": "ebdbb2",
+                    "go": "fbf1c7"
+                },
+                "hover": {
+                    "stop": "fb4934",
+                    "yield": "fabd2f",
+                    "go": "b8bb26"
+                }
+            },
+            "style": "macOS",
+            "shape": "circle",
+            "order": "stop-yield-go",
+            "size": 12,
+            "padding": 4,
+            "position": "top-right"
+        },
+        "shadow": {
+            "enabled": false,
+            "customColor": {
+                "enabled": false,
+                "color": "32302f"
+            }
+        },
+        "sizeConstraints": {
+            "enabled": false
+        },
+        "outline": {
+            "enabled": true,
+            "customColor": {
+                "enabled": true,
+                "active": "fbf1c7",
+                "inactive": "d5c4a1",
+                "stacked": "fb4934"
+            },
+            "cornerRadius": 0,
+            "type": "inline",
+            "width": 2
+        },
+        "transparency": {
+            "enabled": false,
+            "value": 0.5
+        }
+    },
+    "menubar": {
+        "enabled": false,
+        "autohide": false,
+        "transparency": 0.8
+    },
+    "dock": {
+        "enabled": false,
+        "autohide": true,
+        "position": "bottom",
+        "size": 48
+    },
+    "customSystemColorScheme": {
+        "enabled": true,
+        "variant": "dark",
+        "slug": "gruvbox-dark-soft",
+        "colors": {
+            "base00": "32302f",
+            "base01": "3c3836",
+            "base02": "504945",
+            "base03": "665c54",
+            "base04": "bdae93",
+            "base05": "d5c4a1",
+            "base06": "ebdbb2",
+            "base07": "fbf1c7",
+            "base08": "fb4934",
+            "base09": "fe8019",
+            "base0A": "fabd2f",
+            "base0B": "b8bb26",
+            "base0C": "8ec07c",
+            "base0D": "83a598",
+            "base0E": "d3869b",
+            "base0F": "d65d0e"
+        }
+    }
+}
