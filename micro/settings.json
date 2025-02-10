@@ -1,0 +1,10 @@
+{
+    "autosu": true,
+    "colorscheme": "bubblegum",
+    "pluginchannels": [
+        "https://raw.githubusercontent.com/Neko-Box-Coder/unofficial-plugin-channel/main/channel.json"
+    ],
+    "softwrap": true,
+    "statusline": false,
+    "ruler": false
+}
