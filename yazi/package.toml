@@ -1,0 +1,5 @@
+[plugin]
+deps = [{ use = "vvatikiotis/quicklook", rev = "73c9244" }, { use = "andreas-timm/sips-preview", rev = "ec73494" }, { use = "yazi-rs/plugins:no-status", rev = "71c4fc2" }]
+
+[flavor]
+deps = []
