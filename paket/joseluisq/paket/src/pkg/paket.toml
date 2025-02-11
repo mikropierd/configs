@@ -1,0 +1,27 @@
+[package]
+name = "gitnow"
+version = "0.0.0"
+authors = ["Jose Quintana <joseluisq.net>"]
+license = "MIT OR Apache-2.0"
+description = "Speed up your Git workflow. 🐠"
+repository = "https://github.com/joseluisq/gitnow"
+keywords = [
+    "git",
+    "git-workflow",
+    "fish-shell",
+    "fish-packages",
+    "keybindings",
+    "bitbucket",
+    "github"
+]
+
+include = [
+    ".gitnow"
+]
+
+[events]
+after-install = "gitnow_install"
+after-update = "gitnow_update"
+before-uninstall = "gitnow_uninstall"
+
+[dependencies]
