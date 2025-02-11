@@ -1,0 +1,46 @@
+[package]
+name = "paket"
+version = "0.1.5"
+authors = ["Jose Quintana <https://joseluisq.net>"]
+license = "MIT OR Apache-2.0"
+description = "A simple and fast package manager for the Fish shell"
+repository = "https://github.com/joseluisq/paket"
+readme = "README.md"
+keywords = [
+	"cli",
+	"fish-shell",
+	"package-manager"
+]
+categories = ["command-line-utilities"]
+edition = "2021"
+rust-version = "1.70.0"
+include = ["src/**/*", "Cargo.toml", "Cargo.lock"]
+
+[[bin]]
+name = "paket"
+path = "src/bin/paket.rs"
+
+[lib]
+name = "paket"
+path = "src/lib.rs"
+
+[dependencies]
+dirs = "5.0"
+toml = "0.8"
+clap = { version = "4.4", features = ["derive", "env"] }
+anyhow = "1.0"
+serde = { version = "1.0", default-features = false, features = ["derive"] }
+serde_ignored = "0.1"
+semver = { version = "1.0", default-features = false, features = ["serde"] }
+sysinfo = "0.29"
+libc = "0.2"
+
+[profile.release]
+codegen-units = 1
+debug = false
+debug-assertions = false
+lto = "fat"
+opt-level = 3
+panic = "abort"
+rpath = false
+strip = true
