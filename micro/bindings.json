@@ -1,0 +1,9 @@
+{
+    "Alt-/": "lua:comment.comment",
+    "Alt-f": "command:fif",
+    "Alt-h": "command:fifh",
+    "Alt-o": "command:urlopen",
+    "Alt-t": "command:fift",
+    "Alt-v": "command:fifv",
+    "CtrlUnderscore": "lua:comment.comment"
+}
