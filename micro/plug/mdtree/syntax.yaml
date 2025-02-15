@@ -1,0 +1,7 @@
+filetype: mdtree
+
+detect:
+    filename: "^mdtree$"
+
+rules:
+    - special: "#+ .*"
