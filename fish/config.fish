@@ -19,7 +19,7 @@ uv generate-shell-completion fish | source
 function rm; rip --graveyard ~/.Trash $argv; end
 
 bind \e\[122\;9u 'commandline -f undo'
-bind \e\[9\;5u 'commandline -f complete-and-search'
+bind \t 'commandline -f complete-and-search'
 set -x MICRO_TRUECOLOR 1
 export "MICRO_TRUECOLOR=1"
 
@@ -41,4 +41,26 @@ end
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
+
 zoxide init --cmd cd fish | source
+
+fish_add_path /opt/homebrew/sbin
+
+# Added by OrbStack: command-line tools and integration
+# This won't be added again if you remove it.
+source ~/.orbstack/shell/init2.fish 2>/dev/null || :
+
+set -x USER_HOME $HOME
+set -x EZA_CONFIG_DIR $USER_HOME/.config/eza
+set -x XDG_CONFIG_HOME $USER_HOME/.config
+
+
+set -x PATH $PATH /Library/TeX/texbin
+
+
+setup_micro_replacements
+
+set -l __hb_cnf_handler (brew --repository)"/Library/Taps/homebrew/homebrew-command-not-found/handler.fish"
+if test -f $__hb_cnf_handler
+   source $__hb_cnf_handler
+end
